@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/ohager/lib-poc/issues"
   },
-  "homepage": "https://github.com/ohager/lib-poc#readme"
+  "homepage": "https://github.com/ohager/lib-poc#readme",
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
 }
