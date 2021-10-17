@@ -16,6 +16,7 @@
     "prettier": "2.4.1"
   },
   "scripts": {
+    "start": "npm run build:esm && node ./dist/esm/smartc.min.js",
     "build": "npm run build:esm && npm run build:iife",
     "build:esm": "esbuild index.js --bundle --minify --sourcemap --outfile=./dist/esm/smartc.min.js",
     "build:iife": "esbuild index.js --bundle --minify --sourcemap --format=iife --global-name=smartc --outfile=./dist/iife/smartc.min.js",

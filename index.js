@@ -1,5 +1,8 @@
-import {foo} from './src/foo'
+import { foo } from "./src/foo";
+import { Bar } from "./src/bar";
 
-(() => {
-  foo()
-})()
+(async () => {
+  foo();
+  const instance = new Bar("code");
+  await instance.compile();
+})();
